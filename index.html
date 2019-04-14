@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/bootstrap.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/RWD.css">
+</head>
+
+<body>
+	<header>
+		<div class="container header_all">
+			<div class="row justify-content-center align-items-center">
+				<!-- logo -->
+				<div class="logo col-lg-2 col-md-12 col-sm-12">
+					<img src="image/BMICLogo.png">
+				</div>
+
+				<!-- 輸入框表單 -->
+				<form id="BMIform" class="col-lg-4 col-md-8 col-sm-12">
+					<div class="form_tall">
+						<p>身高&nbsp;cm</p>
+						<input type="text" id="heightId" class="inputType" placeholder="請輸入身高" required>
+						<p class="valid_warn">123</p>
+					</div>
+					<div class="form_weight">
+						<p>體重&nbsp;kg</p>
+						<input type="text" id="weightId" class="inputType" placeholder="請輸入體重" required>
+						<p class="valid_warn">123</p>
+					</div>
+				</form>
+
+				<!-- 結果按鈕 -->
+				<div class="btn_all col-lg-2 col-md-12 col-sm-12">
+					<input type="button" id="submitBtn" class="btn" value="看結果">
+					<!-- <input type="button" id="recordBtn" class="btn" value="儲存"> -->
+					<div class="BMIsum_all">
+						<p id="BMIsum"></p>
+						<p class="BMItxt">BMI</p>
+						<input type="button" id="reBtn" class="btn" value="重置">
+						<span id="BMIrange"></span>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</header>
+
+
+	<main>
+		<h1 class="record_title">BMI紀錄</h1>
+		<table class="BMItable">
+			<!-- <tr class="th_row">
+				<td>狀態</td>
+				<td>BMI</td>
+				<td>身高</td>
+				<td>體重</td>
+				<td>日期</td>
+				<td>刪除</td>
+			</tr>
+			<tr class="th_row">
+				<td>
+					<div class="tb_border"></div>
+				</td>
+				<td>
+					<div class="tb_border"></div>
+				</td>
+				<td>
+					<div class="tb_border"></div>
+				</td>
+				<td>
+					<div class="tb_border"></div>
+				</td>
+				<td>
+					<div class="tb_border"></div>
+				</td>
+				<td>
+					<div class="tb_border"></div>
+				</td>
+			</tr> -->
+
+		</table>
+
+		<!-- <table class="BMItable">
+		<tr class="table_row">
+                <td class="record_list">理想</td>
+                <td class="record_list">18.97</td>
+                <td class="record_list">理想</td>
+                <td class="record_list">理想</td>
+                <td class="record_list">時間</td>
+                <a href="#">x</a>
+            </tr>
+		</table> -->
+	</main>
+
+	<footer>
+		<div class="footer_logo">
+			<img src="image/footer_BMICLogo.png" alt="">
+			<p>個人練習用，無商業用途</p>
+		</div>
+	</footer>
+
+	<script src="JS/all_fin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-family: Arial, 微軟正黑體;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------- */
+html, body {
+    background-color: #ececec;
+}
+
+p {
+    margin: 0;
+}
+
+/* 上部 */
+header {
+    background-color: #424242 ;
+    text-align: center;
+}
+
+
+.header_all {
+    text-align: center;
+    padding: 40px 15px 30px 15px;
+    margin: 0 auto;
+}
+
+.logo{
+    text-align: center;
+}
+
+
+.logo img {
+    width: 140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 輸入框 */
+
+#BMIform {
+    width: 300px;
+    margin: 0 5px 0 15px;
+    text-align: center;
+}
+
+form p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+
+.inputType {
+    color: white;
+    margin: 8px 0 5px 0;
+    width: 100%;
+    height: 3em;
+    padding: 5px 10px;
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+    text-align: left;
+}
+
+::placeholder {
+    color: #979797;
+}
+
+.form_tall {
+    margin: 0 0 15px 0;
+}
+
+.form_weight {
+    margin: 0;
+}
+
+.valid_warn {
+    color: #aeffdd;
+    font-size: 12px;
+    margin: 5px 0;
+    opacity: 0;
+}
+
+/* 結果按鈕 */
+.btn_all {
+    text-align: center;
+    margin: 0 0 15px 0;
+    position: relative;
+    top: 10px;
+}
+
+#submitBtn {
+    color: #424242;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFD366;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    border: 0px;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-family: 微軟正黑體;
+    cursor: pointer;
+    text-align: center;
+}
+
+.BMIsum_all {
+    display: none;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    border: 3px solid #FFD366;
+    border-radius: 50%; 
+    text-align: center;
+}
+
+#BMIsum {
+    color: white;
+    font-size: 24px; 
+    position: relative;
+    top: 40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.BMItxt {
+    font-size: 12px;
+    position: relative;
+    top: 50px;
+    color: #FFD366;
+}
+
+#reBtn {
+    display: none;
+    color: #424242;
+    width: 40px;
+    height: 40px;
+    padding: 5px; 
+    border: 3px solid #424242 ;
+    border-radius: 50%;
+    background-color: #FFD366;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: 微軟正黑體;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    top: 35px;
+    
+}
+
+#BMIrange {
+    white-space: nowrap;
+    margin: 0;
+    color: white;
+    font-size: 24px; 
+    font-weight: 500;
+    position: relative;
+    left: 140px;
+    top: -25px;
+    text-align: center;
+}
+
+
+
+.clearfix {
+    clear: both;
+}
+
+
+.record_title {
+    text-align: center;
+    margin: 40px auto 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5e5e77;
+}
+
+
+/* 紀錄目錄 */
+main {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.BMItable {
+    width: 90%;
+    text-align: center;
+    margin: 30px auto 0 auto; 
+    /* white-space: nowrap; */
+}
+
+
+.th_row td {
+    width: 17%;
+    text-align: center;
+    /* padding: 5px 10px; */
+    font-size: 16px; 
+    white-space: nowrap;
+    border-left: 5px solid transparent;
+}
+
+.border_row {
+    padding: 5px 10px 15px 10px;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.tb_border {
+    background-color: #f1ae41;
+    height: 2.5px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    /* top: -5px; */
+}
+
+
+
+/* 新增紀錄 */
+
+.BMI_row {
+    border-bottom: 10px solid #ececec;
+}
+
+.record_state {
+    white-space: nowrap;
+}
+
+.record_list {
+    border-bottom: 10px solid #ececec;
+    width: 17%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px; 
+    line-height: 1.5em;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+
+.delete {
+    width: 20px;
+    height: 20px;
+    background-color: #FFD366;
+    text-align: center;
+    border: 0px;
+    border-radius: 50%; 
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.delete:hover {
+    background-color: #ffbf5f;
+}
+
+.x_txt {
+    font-size: 12px;
+}
+
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: #FFD366;
+    position: relative;
+    top: 270px;
+    padding: 15px;
+    line-height: 25px;
+}
+
+.footer_logo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer_logo img {
+    width: 40px;
+}
+
+footer p {
+    font-size: 13px;
+    font-weight: bold;
+}
